@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css" type="text/css">
+
+    <title>Figuras Geométricas</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__titulo">FIGURAS GEOMÉTRICAS</h1>
+    </header>
+    <section class="container__figuras">
+        <section class="cuadrado__section">
+            <section class="cuadrado__container">
+                <div class="cuadrado__container--img">
+                    <img class="cuadrado__img" src="../img/cuadrado.png">
+                    <h2>Cuadrado</h2>
+
+                </div>
+
+
+                <form class="cuadrado__container--form">
+                    <label class="cuadrado__container--label" for="input__cuadrado">
+                        Cuánto mide cada lado de tu cuadrado?
+
+                    </label>
+
+                    <input class="cuadrado__container--input" id="input__cuadrado" type="number" />
+                    <button class="cuadrado__container--perimetro" type="button" onclick="calcularPerimetroCuadrado()">
+                        Cálcular el Perimetro
+                    </button>
+
+                    <button class="cuadrado__container--area" type="button" onclick="calcularAreaCuadrado()">
+                        Cálcular el área
+                    </button>
+
+                    <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+                </form>
+
+            </section>
+        </section>
+
+
+        <!--*****************triangulo*******************-->
+
+        <section class="cuadrado__section">
+            <section class="triangulo__container">
+                <div class="cuadrado__container--img">
+                    <h2>Triángulo</h2>
+
+                </div>
+
+
+                <form class="cuadrado__container--form">
+                   
+                    <input class="input" id="lado__1" type="number" placeholder="lado 1" />
+
+                    <input class="input" id="lado__2" type="number" placeholder="lado 2" />
+
+                    <input class="input" id="lado__base" type="number" placeholder="base" />
+
+                    <input class="input" id="altura" type="number" placeholder="altura"/>
+                    
+                    <button class="cuadrado__container--perimetro" type="button" onclick="calcular_Perimetro_Triangulo()">
+                        Cálcular el Perimetro
+                    </button>
+
+                    <button class="cuadrado__container--area" type="button" onclick="calcular_area_Triangulo()">
+                        Cálcular el área
+                    </button>
+
+                    <p class="triangulo__container--parrafo" id="triangulo__container--parrafo"></p>
+                </form>
+
+            </section>
+        </section>
+    </section>
+
+    <script src="./figuras.js"></script>
+
+</body>
+
+</html>
