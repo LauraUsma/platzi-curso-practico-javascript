@@ -31,7 +31,8 @@
 
                     </label>
 
-                    <input class="cuadrado__container--input" id="input__cuadrado" type="number" />
+                    <input class="cuadrado__container--input input" id="input__cuadrado" type="number"
+                        placeholder="lado" />
                     <button class="cuadrado__container--perimetro" type="button" onclick="calcularPerimetroCuadrado()">
                         Cálcular el Perimetro
                     </button>
@@ -58,16 +59,17 @@
 
 
                 <form class="cuadrado__container--form">
-                   
+
                     <input class="input" id="lado__1" type="number" placeholder="lado 1" />
 
                     <input class="input" id="lado__2" type="number" placeholder="lado 2" />
 
                     <input class="input" id="lado__base" type="number" placeholder="base" />
 
-                    <input class="input" id="altura" type="number" placeholder="altura"/>
-                    
-                    <button class="cuadrado__container--perimetro" type="button" onclick="calcular_Perimetro_Triangulo()">
+                    <input class="input" id="altura" type="number" placeholder="altura" />
+
+                    <button class="cuadrado__container--perimetro" type="button"
+                        onclick="calcular_Perimetro_Triangulo()">
                         Cálcular el Perimetro
                     </button>
 
@@ -80,7 +82,72 @@
 
             </section>
         </section>
+
+
+        <!--*****************circulo*******************-->
+
+        <section class="cuadrado__section">
+            <section class="circulo__container">
+                <div class="cuadrado__container--img">
+                    <h2>Circulo</h2>
+
+                </div>
+
+
+                <form class="cuadrado__container--form">
+
+                    <input class="input__circulo" id="circulo__input" type="number" placeholder="radio" />
+
+                    <button class="cuadrado__container--perimetro" type="button" onclick="calcular_Perimetro_circulo()">
+                        Cálcular el Perimetro
+                    </button>
+
+                    <button class="cuadrado__container--area" type="button" onclick="calcular_area_circulo()">
+                        Cálcular el área
+                    </button>
+
+                    <p class="circulo__container--parrafo" id="circulo__container--parrafo"></p>
+                </form>
+
+            </section>
+        </section>
+
+        <!--*****************altura del triangulo isosceles*******************-->
+
+        <section class="cuadrado__section">
+            <section class="triangulo__container">
+                <div class="cuadrado__container--img">
+                    <h2>Altura Triangulo Isósceles</h2>
+
+                </div>
+
+
+                <form class="cuadrado__container--form">
+
+                    <input class="input" id="lado__isosceles--1" type="number" placeholder="lado 1" />
+
+                    <input class="input" id="lado__isosceles--2" type="number" placeholder="lado 2" />
+
+                    <input class="input" id="lado__base--isosceles" type="number" placeholder="base" />
+
+
+                    <button class="cuadrado__container--perimetro" type="button"
+                        onclick="alturaTrianguloIsosceles()">
+                        Cálcular Altura(h)
+                    </button>
+
+
+                    <p class="isosceles__container--parrafo" id="isosceles__container--parrafo"></p>
+                </form>
+
+            </section>
+        </section>
+
     </section>
+
+    </section>
+
+
 
     <script src="./figuras.js"></script>
 
