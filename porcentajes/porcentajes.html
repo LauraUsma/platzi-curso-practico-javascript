@@ -16,13 +16,33 @@
             <ul>
               <li><a class="link" href="../Figuras/figuras.html">Figuras</a></li>
               <li><a class="link" href="../porcentajes/porcentajes.html">Porcentajes</a></li>
-              <li><a class="link" href="">Promedio</a></li>
+              <li><a class="link" href="../promedio/promedio.html">Promedio</a></li>
               <li><a class="link" href="">Salarios</a></li>
             </ul>
           </nav>
   
     </header>
     <h2 class="header__titulo">PORCENTAJES</h2>
+
+    <section>
+
+      <form>
+          <label for="InputPrice"> Precio</label>
+          <input id="InputPrice" type="number"/>
+
+          <label for="InputDiscount"> Descuento del producto </label>
+          <input id="InputDiscount" type="number">
+
+          <label for="InputCoupon"> Descuento del producto con cupón </label>
+          <input id="InputCoupon" type="text">
+
+          <button type="button" onclick="priceDiscount()">Obtener Precio con Descuento</button>
+
+          <button type="button" onclick="priceCoupon()">Obtener Precio con Cupón</button>
+        <p id="PriceTotal"></p>
+      </form>
+
+    </section>
 
     <script src="./porcentajes.js"></script>
 

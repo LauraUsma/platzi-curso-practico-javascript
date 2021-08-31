@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./promedio.css" type="text/css">
+  <link rel="stylesheet" href="../Figuras/figuras.css" type="text/css">
+
+  <title>Promedio</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="">CURSO PRACTICO DE JS</h1>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a class="link" href="../Figuras/figuras.html">Figuras</a></li>
+        <li><a class="link" href="../porcentajes/porcentajes.html">Porcentajes</a></li>
+        <li><a class="link" href="../promedio/promedio.html">Promedio</a></li>
+        <li><a class="link" href="">Salarios</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <h2 class="header__titulo">PROMEDIO</h2>
+
+  <section class="container__promedio">
+
+    <section class="cuadrado__section_promedio">
+      <section class="cuadrado__container">
+   
+        <form class="cuadrado__container--form">
+          <label class="cuadrado__container--label" for="input__cuadrado">
+         INGRESA TU LISTA DE NUMEROS
+
+          </label>
+
+          <input class="cuadrado__container--input input" id="input__cuadrado" type="number" placeholder="" />
+          <button class="cuadrado__container--perimetro" type="button" onclick="calcularPerimetroCuadrado()">
+            Cálcular la Moda
+          </button>
+
+          <button class="cuadrado__container--area" type="button" onclick="calcularAreaCuadrado()">
+            Cálcular la Mediana
+          </button>
+
+          <button class="cuadrado__container--area" type="button" onclick="calcularAreaCuadrado()">
+            Cálcular el Promedio
+
+
+          <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+        </form>
+
+      </section>
+
+    </section>
+
+    <section class="cuadrado__section_promedio">
+
+    <section class="cuadrado__container">
+   
+      <h3>La Moda es Igual a:</h3>
+      <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+
+      <h3>La Mediana  es Igual a:</h3>
+      <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+
+      <h3>El promedio es Igual a:</h3>
+      <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+
+
+  </section>
+  </section>
+
+  </section>
+
+  <script src="./promedio.js"></script>
+</body>
+
+</html>

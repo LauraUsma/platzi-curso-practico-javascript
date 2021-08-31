@@ -1,0 +1,25 @@
+$font_Style:'Muli',sans-serif;
+$color-white: white;
+$color_violet: #8F57FD;
+
+
+@import '../header.scss';
+
+
+.container__promedio{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.cuadrado__section_promedio{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+    color: $color-white;
+    padding-top: 20px;
+   
+
+}
