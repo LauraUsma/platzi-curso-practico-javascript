@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lamg = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./salarios.css" type="text/css">
+        <link rel="stylesheet" href="../Figuras/figuras.css" type="text/css">
+      
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="">CURSO PRACTICO DE JS</h1>
+        
+            <nav class="header__nav">
+              <ul>
+                <li><a class="link" href="../Figuras/figuras.html">Figuras</a></li>
+                <li><a class="link" href="../porcentajes/porcentajes.html">Porcentajes</a></li>
+                <li><a class="link" href="../promedio/promedio.html">Promedio</a></li>
+                <li><a class="link" href="../salarios/salarios.html">Salarios</a></li>
+              </ul>
+            </nav>
+        
+          </header>
+          <h2 class="header__titulo">SALARIOS</h2>
+
+          <section>
+            <form>
+                <label for="InputTotal"> Precio</label>
+                <input id="InputTotal" type="number"/>
+      
+                <label for="InputCuota"> cuotas </label>
+                <select name="meses" id="InputCuota">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                  </select>
+      
+                <button type="button" onclick="calcularCuota()">Obtener Precio</button>
+      
+              <p id="PriceCuota"></p>
+            </form>
+      
+      
+
+          </section>
+        
+
+
+
+          <script src="./salarios.js"></script>
+          <script src="./analisis.js"></script>
+    </body>
+</html>

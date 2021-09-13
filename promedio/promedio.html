@@ -20,7 +20,7 @@
         <li><a class="link" href="../Figuras/figuras.html">Figuras</a></li>
         <li><a class="link" href="../porcentajes/porcentajes.html">Porcentajes</a></li>
         <li><a class="link" href="../promedio/promedio.html">Promedio</a></li>
-        <li><a class="link" href="">Salarios</a></li>
+        <li><a class="link" href="../salarios/salarios.html">Salarios</a></li>
       </ul>
     </nav>
 
@@ -33,25 +33,26 @@
       <section class="cuadrado__container">
    
         <form class="cuadrado__container--form">
-          <label class="cuadrado__container--label" for="input__cuadrado">
+          <label class="cuadrado__container--label" for="input__promedio">
          INGRESA TU LISTA DE NUMEROS
 
           </label>
 
-          <input class="cuadrado__container--input input" id="input__cuadrado" type="number" placeholder="" />
-          <button class="cuadrado__container--perimetro" type="button" onclick="calcularPerimetroCuadrado()">
+          <input class="cuadrado__container--input input" id="input__promedio" type="text" placeholder="" />
+          
+          <button class="cuadrado__container--perimetro" type="button" onclick="botonModa()">
             Cálcular la Moda
           </button>
 
-          <button class="cuadrado__container--area" type="button" onclick="calcularAreaCuadrado()">
+          <button class="cuadrado__container--area" type="button" onclick="botonMediana()">
             Cálcular la Mediana
           </button>
 
-          <button class="cuadrado__container--area" type="button" onclick="calcularAreaCuadrado()">
+          <button class="cuadrado__container--area" type="button" onclick="botonPromedio()">
             Cálcular el Promedio
+          </button>
 
 
-          <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
         </form>
 
       </section>
@@ -63,13 +64,13 @@
     <section class="cuadrado__container">
    
       <h3>La Moda es Igual a:</h3>
-      <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+      <p class="cuadrado__container--parrafo" id="parrafoModa"></p>
 
       <h3>La Mediana  es Igual a:</h3>
-      <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+      <p class="cuadrado__container--parrafo" id="parrafoMediana"></p>
 
       <h3>El promedio es Igual a:</h3>
-      <p class="cuadrado__container--parrafo" id="cuadrado__container--parrafo"></p>
+      <p class="cuadrado__container--parrafo" id="parrafoPromedio"></p>
 
 
   </section>
